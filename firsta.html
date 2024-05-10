@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eCommerce Admin Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      /* Sidebar */
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #343a40;
+        padding: 15px;
+      }
+
+      /* Page content */
+      .content {
+        margin-left: 250px;
+        padding: 20px;
+      }
+
+      /* Cards */
+      .card {
+        margin-bottom: 20px;
+      }
+
+      .navbar {
+        background-color: #343a40;
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .content {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      
+        <form class="form-inline ml-auto">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+   
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2 class="text-white">Admin Panel</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Orders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Customers</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
+      <h2>Dashboard</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Total Orders</h5>
+              <p class="card-text">500</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Total Products</h5>
+              <p class="card-text">1000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Total Customers</h5>
+              <p class="card-text">750</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Total Revenue</h5>
+              <p class="card-text">rs.50,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
